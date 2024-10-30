@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie +</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <a href="#" class="banner">
+            <h1>Movie +</h1>
+        </a>
+        <div class="nav-container">
+            <nav>
+                <a href="#movies">Movies</a>
+                <a href="#series">Series</a>
+                <a href="#sports">Sports</a>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section id="movies" class="service">
+            <h2>Movies</h2>
+            <div class="item">
+                <h3>Le Loup de Wall Street</h3>
+                <p>Un film passionnant sur l'ascension et la chute d'un trader ambitieux.</p>
+            </div>
+            <div class="item">
+                <h3>Bienvenue chez les Ch'tis</h3>
+                <p>Reentrez dans l'univers du Nord de la France à travers cette réalisation de Dany Boon.</p>
+            </div>
+        </section>
+
+        <section id="series" class="service">
+            <h2>Series</h2>
+            <div class="item">
+                <h3>La Casa de Papel</h3>
+                <p>Une série dramatique sur un braquage légendaire mené par le Professeur.</p>
+            </div>
+            <div class="item">
+                <h3>Stranger Things</h3>
+                <p>Une série mystérieuse qui explore des événements surnaturels dans une petite ville.</p>
+            </div>
+        </section>
+
+        <section id="sports" class="service">
+            <h2>Sports</h2>
+            <div class="item">
+                <h3>Match de Football</h3>
+                <p>Suivez les meilleurs matchs de football en direct.</p>
+            </div>
+            <div class="item">
+                <h3>Tournoi de Tennis</h3>
+                <p>Profitez des tournois de tennis en direct avec des analyses détaillées.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript pour rendre le menu de navigation fixe après défilement
+        window.onscroll = function() {
+            const navbar = document.getElementById("navbar");
+            const headerContainer = document.querySelector(".header-container");
+            const bannerHeight = headerContainer.offsetHeight;
+            if (window.pageYOffset >= bannerHeight) {
+                navbar.classList.add("fixed-nav");
+            } else {
+                navbar.classList.remove("fixed-nav");
+            }
+        };
+    </script>
+
+</body>
+</html>
+
+
+
+
+

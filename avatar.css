@@ -1,0 +1,31 @@
+.movie-avatar {
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.allocine.fr%2Ffilm%2Ffichefilm-127524%2Fdvd-blu-ray%2F%3Fcproduct%3D155240&psig=AOvVaw0jy7brRhDl9ixLuNrA0NjO&ust=1730227876582000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODltqHfsYkDFQAAAAAdAAAAABAE");
+    background-size: cover;
+    background-position: center;
+}
+
+.series-avatar {
+    background-image: url('path_to_series_poster.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#career-form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#career-form button {
+    background-color: #ffbf00;
+    color: #222;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#career-form button:hover {
+    background-color: #ff9900;
+}

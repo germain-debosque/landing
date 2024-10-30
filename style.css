@@ -1,0 +1,151 @@
+//* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b; /* Fond plus foncé que le gris, mais plus clair que le noir */
+    color: #f0f0f0; /* Texte clair pour un bon contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Conteneur noir autour de la bannière et du menu */
+.header-container {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+/* Styles de la bannière */
+.banner {
+    background: linear-gradient(to right, #007bff, #00c853);
+    color: black;
+    width: 100%;
+    max-width: 1200px;
+    padding: 35px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.banner h1 {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+}
+
+/* Styles du header */
+header {
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 40px;
+    background-color: #555;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Styles des en-têtes de section */
+h2, h3 {
+    font-family: 'Arial Black', sans-serif;
+    font-weight: 900;
+    color: #f0f0f0; /* Texte clair pour contraste */
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* Styles des sections */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.service {
+    width: 100%;
+    max-width: 800px;
+    background-color: #3a3a3a; /* Gris moyen pour contraster avec le fond */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.item {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 16px;
+    color: #dcdcdc; /* Texte clair dans les sections */
+}
+
+/* Media queries pour adaptabilité mobile */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+
+
+
